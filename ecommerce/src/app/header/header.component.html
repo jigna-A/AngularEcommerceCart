@@ -1,0 +1,77 @@
+<!-- 
+
+
+<nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container px-4 px-lg-5">
+    
+    <a class="navbar-brand" routerLink=''>
+          <span class="colo" style="font-size: 30px;"> WILL</span>
+          <span class="shopname" style="font-size: 30px;"> HELM</span>
+
+    </a>
+    
+
+    
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="#!">
+                <form action="">
+                    <input (keyup)="search($event)" style="width: 300px; height: 30px;" class="form-control" type="text" placeholder="Search Products">
+                </form>
+            </a></li>
+            <li class="nav-item"><a class="nav-link active" routerLink="wishlist">Wishlist
+                <i class="fa-solid fa-heart text-danger"></i>
+            </a></li>
+            
+        
+        </ul>
+        <form class="d-flex">
+            <a class="btn btn-light" type=""routerLink="cart" >
+                <i class="bi-cart-fill me-1"></i>
+                <i class="fa-solid fa-cart-shopping"></i>           
+                <span class=" rounded-pill">{{totalItem}}</span>
+            </a>
+        </form>
+    </div>
+</div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <div class="container px-3">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <span class="category">
+                <ul class="navbar-nav  me-4 my-3 my-lg-0">
+                    <li class="nav-item "><a class="nav-link me-lg-3 text-white" routerLink="allproduct">All</a></li>
+
+                    <li class="nav-item "><a class="nav-link me-lg-3 text-white" routerLink="menproduct">Men</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 text-white" routerLink="womenproduct">Women</a></li>
+    
+                </ul>
+            </span>
+           
+            
+        </div>
+        
+    <a class="navbar-brand" routerLink=''>
+        <span class="colo" style="font-size: 30px;"> WILL</span>
+        <span class="shopname" style="font-size: 30px;"> HELM</span>
+
+  </a>  
+        
+        <form class="d-flex mx-3" role="search">
+            <input (keyup)="search($event)" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+          </form>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item"><a class="nav-link me-lg-3 text-white" routerLink="/wishlist"><i class="fa-solid fa-heart text-danger"></i>WishList</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3 text-white" routerLink="/cart"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+    

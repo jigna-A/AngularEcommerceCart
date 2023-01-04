@@ -1,0 +1,64 @@
+
+ 
+
+
+ 
+
+ 
+
+  <section class="py-5">
+    <div class="container-fluid px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div   class="col mb-5 " *ngFor="let womenproducts of productDetails | filter:search :'title'  " >
+                <div class="card h-100 p-2 ">
+                    <!-- Product image-->
+                    <div class="container">
+                        <img style="height: 300px;" class="card-img-top" [src]=womenproducts.image alt="No image" />
+                        <div class="overlay">
+                            <div class="content">
+                                <!-- <div class="text-center row"> -->
+                                    <!-- <div class="wishlist" class="col-6"> -->
+                                        <button (click)="addTowishlist(womenproducts)"  class="btn btn-outline-dark mt-auto"> <i class="fa-solid fa-heart text-danger"></i> Wishlist</button>
+                                    <!-- </div> -->&nbsp;
+                                    <!-- <div class="col-6"> -->
+                                        <button (click)="addToCart(womenproducts)" class="btn btn-outline-dark mt-auto"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button><br><br><br><br><br><br>
+                                    <!-- </div> -->
+                                   
+                                    
+                                <!-- </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{womenproducts.title}}</h5>
+                            <!-- Product price-->
+                            ${{womenproducts.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                        </div>
+                    </div>
+                        
+                        
+                            
+                        
+
+                       
+
+                </div>
+            </div>
+           
+          
+           
+          
+           
+        </div>
+    </div>
+</section>

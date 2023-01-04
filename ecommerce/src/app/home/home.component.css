@@ -1,0 +1,40 @@
+.color{
+    height: 300px ;
+}
+h1{
+    padding-left: 250px;
+    padding-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color:black ;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+
+a{
+    padding-left: 250px;
+
+}
+
+
+  .image{
+    padding-left: 900px;
+    padding-bottom: 400px;
+    height: 969px;
+  }
+.galleryImg{
+  width: 350px;
+  padding-left: 100px;
+}
+.gallery {
+  padding: 50px;
+  display: flex;
+}
+img:hover{
+  transform: scale(1.2);
+  /* z-index: 1; */
+}
+.extra{
+  height: 2px;
+}
+
+

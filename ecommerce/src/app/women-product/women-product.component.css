@@ -1,0 +1,27 @@
+img:hover{
+    width: 900px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: gray;
+    cursor: pointer;
+}
+.content{
+   
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    padding-top: 240px;
+   
+
+}
+.container:hover .overlay{
+    opacity: 0.6;
+
+}
